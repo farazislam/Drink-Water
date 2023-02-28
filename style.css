@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=PT+Sans+Narrow&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --border-color: #144fc6;
+    --fill-color: #6ab3f8;
+  }
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #3494e4;
+    color: #fff;
+}
+
+.heading {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.heading h1 {
+    line-height: 70%;
+}
+
+.heading p {
+    line-height: 30%;
+}
+
+.glasses {
+    margin-top: 40px;
+}
+
+.cups {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cup {
+    border: 3px solid var(--border-color);
+    background-color: #fff;
+    width: 40px;
+    height: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: var(--border-color);
+    font-size: 0.8rem;
+}
+
+.cup-standard {
+    cursor: pointer;
+}
+
+.cup-standard:active {
+    transform: scale(0.98);
+}
+
+.cup.filled {
+    background-color: var(--fill-color);
+    color: #fff;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.cup-large {
+    position:relative;
+    width: 150px;
+    height: 300px;
+    padding: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: var(--fill-color);
+}
+
+.cup-large .drunk {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: height 0.3s ease-in-out, border-bottom-left-radius 0.3s ease-in-out,
+                border-bottom-right-radius 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
+.cup-large .drunk.round-border {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.cup-large .drunk.one-drunk {
+    height: 87.5%;
+}
+
+.cup-large .drunk.two-drunk {
+    height: 75%;
+}
+
+.cup-large .drunk.three-drunk {
+    height: 62.5%;
+}
+
+.cup-large .drunk.four-drunk {
+    height: 50%;
+}
+
+.cup-large .drunk.five-drunk {
+    height: 37.5%;
+}
+
+.cup-large .drunk.six-drunk {
+    height: 25%;
+}
+
+.cup-large .drunk.seven-drunk {
+    height: 12.5%;
+}
+
+.cup-large .drunk.eight-drunk {
+    height: 0;
+}
+
+.cup-large .drunk.seven-drunk p {
+    color: #fff;
+}
+
+.cup-large .drunk.eight-drunk h3,
+.cup-large .drunk.eight-drunk p
+ {
+    color: #fff;
+}
